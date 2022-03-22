@@ -1,8 +1,6 @@
 #include "funciones.h" 
 
-//https://www.youtube.com/watch?v=A8IkGIqZoLQ&ab_channel=CodeVault
-
-void entrada(char* return_text,int a, char** b){
+char entrada(int a, char** b){
   
   char texto[150];
   int k;
@@ -20,8 +18,9 @@ void entrada(char* return_text,int a, char** b){
   }
   fclose(mensaje);
 
-  printf("%s\n", texto);
   printf("Se ha leido el archivo con exito\n");
-
-	strcpy(return_text,"hola");
+	return *texto;
  }
+
+
+// FUNCION LISTA

@@ -1,7 +1,7 @@
 #include "funciones.h"
 
-const char* salida(int a, char** b){
-  int largo_output = 30
+const char* salida(output, int a, char** b){
+  int largo_output = 30;
   char output[largo_output];
   FILE* fptr;
 

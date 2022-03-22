@@ -4,20 +4,21 @@
 #include "funciones.h"
 
 int main(int argc, char *argv[])  {
-
-  char clave1[10];
-  char clave2[10];
-  char nombre_salida[30];
+	
 // LECUTRA DE ARCHIVO
 // LECTURA DE ARCHIVO
-
+	
 	char input_text[150];
-	entrada(input_text,argc, argv);
-	printf("aqui va el mensaje que viene de la funcion entrada");
+	entrada(argc, argv);
+	//printf("aqui va el mensaje que viene de la funcion entrada en el main");
 	printf("%s\n",input_text);
-
+	int longitud = strlen(input_text);
+	printf("%i\n",longitud);
+	
+  //char output_text[100];
+  
 // ESCRITURA DE ARCHIVO
-  salida(argc, argv);
+  //salida(output,argc, argv);
 	
 
   //if (argv[2] == "encode" || argv[2] == "decode"){ printf("llamamos a deco");}
@@ -27,11 +28,7 @@ int main(int argc, char *argv[])  {
   //clave1[] = argv[3];
   //clave2[] = argv[4];
   //nombre_salida[] = argv[5];
-    
   return 0;
-	
-	
-	
 }
 
 //const char *filename = "input.txt";

@@ -1,6 +1,6 @@
 #include "funciones.h" 
 
-void entrada(char* return_text,int a, char** b){
+char entrada(int a, char** b){
   
   char texto[150];
   int k;
@@ -18,8 +18,9 @@ void entrada(char* return_text,int a, char** b){
   }
   fclose(mensaje);
 
-  printf("%s\n", texto);
   printf("Se ha leido el archivo con exito\n");
-
-	strcpy(return_text,texto);
+	return *texto;
  }
+
+
+// FUNCION LISTA

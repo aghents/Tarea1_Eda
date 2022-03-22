@@ -1,4 +1,5 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-void  entrada(char* return_text,int a, char** b);
+char entrada(int a, char** b);
+void encode(char texto,char** b);
